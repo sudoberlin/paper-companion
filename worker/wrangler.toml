@@ -1,0 +1,15 @@
+name = "paper-companion"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+
+[vars]
+# Model used for every request. Change it here and redeploy.
+MODEL = "claude-sonnet-5-5"
+# Sites allowed to call this Worker (comma separated). localhost is always allowed for testing.
+ALLOWED_ORIGINS = "https://sudoberlin.github.io"
+
+# Paper library storage. Replace the id with the one printed by:
+#   npx wrangler kv namespace create LIBRARY
+[[kv_namespaces]]
+binding = "LIBRARY"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
