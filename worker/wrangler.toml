@@ -1,6 +1,9 @@
 name = "paper-companion"
 main = "src/index.js"
 compatibility_date = "2025-06-01"
+workers_dev = true
+# Per-version preview links are not needed.
+preview_urls = false
 
 [vars]
 # Model used for every request. Change it here and redeploy.
@@ -12,4 +15,4 @@ ALLOWED_ORIGINS = "https://sudoberlin.github.io"
 #   npx wrangler kv namespace create LIBRARY
 [[kv_namespaces]]
 binding = "LIBRARY"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "70f972419e764701822ee7a0522a27cb"
